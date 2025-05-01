@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+  background: transparent;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+}
