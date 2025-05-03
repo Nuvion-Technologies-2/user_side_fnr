@@ -56,8 +56,8 @@ const Header = ({ activeSection, setIsBookingOpen }) => {
               }`} />
             </a>
           ))}
-          <button
-            onClick={() => setIsBookingOpen(true)}
+          <a
+            href="#contactus"
             className="bg-[#FFA500] hover:bg-[#FFA500]/80 text-gray-900 font-bold py-2 px-6 rounded-md transition-colors relative overflow-hidden group"
           >
             <span className="relative z-10">Book Now</span>
@@ -67,7 +67,7 @@ const Header = ({ activeSection, setIsBookingOpen }) => {
               whileHover={{ x: "100%" }}
               transition={{ duration: 0.6 }}
             />
-          </button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -102,15 +102,12 @@ const Header = ({ activeSection, setIsBookingOpen }) => {
                   {item.label}
                 </a>
               ))}
-              <button
-                onClick={() => {
-                  setIsBookingOpen(true);
-                  setIsMenuOpen(false);
-                }}
+              <a
+                href="#contactus"
                 className="bg-[#FFA500] hover:bg-[#FFA500]/80 text-gray-900 font-bold py-2 px-6 rounded-md transition-colors w-full"
               >
                 Book Now
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

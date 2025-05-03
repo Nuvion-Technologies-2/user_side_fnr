@@ -3,26 +3,6 @@
 // import { motion } from "framer-motion";
 
 // const ComingSoon = () => {
-//   // Load Watson Assistant script
-//   useEffect(() => {
-//     window.watsonAssistantChatOptions = {
-//       integrationID: "dbc5efd6-7930-44f3-a666-5c922e7af412",
-//       region: "au-syd",
-//       serviceInstanceID: "5ce544a6-f5fe-4683-b19b-6e4bf839a15a",
-//       onLoad: async (instance) => {
-//         await instance.render();
-//       },
-//     };
-
-//     setTimeout(() => {
-//       const t = document.createElement("script");
-//       t.src =
-//         "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-//         (window.watsonAssistantChatOptions.clientVersion || "latest") +
-//         "/WatsonAssistantChatEntry.js";
-//       document.head.appendChild(t);
-//     }, 0);
-//   }, []);
 
 //   return (
 //     <motion.div
@@ -129,38 +109,6 @@ import { fadeInUp, slideInLeft, zoomIn } from "../utils/animations";
 const ComingSoon = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  // Load Watson Assistant script
-  useEffect(() => {
-    // Check if script is already loaded
-    if (document.getElementById("watson-assistant-script")) {
-      return;
-    }
-
-    window.watsonAssistantChatOptions = {
-      integrationID: "dbc5efd6-7930-44f3-a666-5c922e7af412",
-      region: "au-syd",
-      serviceInstanceID: "5ce544a6-f5fe-4683-b19b-6e4bf839a15a",
-      onLoad: async (instance) => {
-        await instance.render();
-      },
-    };
-
-    const script = document.createElement("script");
-    script.id = "watson-assistant-script";
-    script.src =
-      "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-      (window.watsonAssistantChatOptions.clientVersion || "latest") +
-      "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(script);
-
-    // Cleanup
-    return () => {
-      if (document.getElementById("watson-assistant-script")) {
-        document.head.removeChild(script);
-      }
-    };
-  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();

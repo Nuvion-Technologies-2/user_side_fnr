@@ -56,38 +56,6 @@
 //     return () => window.removeEventListener("scroll", handleScroll);
 //   }, []);
 
-//   // Watson Assistant script
-//   useEffect(() => {
-//     // Check if the script is already loaded to prevent duplicates
-//     if (document.getElementById("watson-assistant-script")) {
-//       return;
-//     }
-
-//     window.watsonAssistantChatOptions = {
-//       integrationID: "dbc5efd6-7930-44f3-a666-5c922e7af412",
-//       region: "au-syd",
-//       serviceInstanceID: "5ce544a6-f5fe-4683-b19b-6e4bf839a15a",
-//       onLoad: async (instance) => {
-//         await instance.render();
-//       },
-//     };
-
-//     const script = document.createElement("script");
-//     script.id = "watson-assistant-script";
-//     script.src =
-//       "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-//       (window.watsonAssistantChatOptions.clientVersion || "latest") +
-//       "/WatsonAssistantChatEntry.js";
-//     document.head.appendChild(script);
-
-//     // Cleanup to remove the script when the component unmounts
-//     return () => {
-//       if (document.getElementById("watson-assistant-script")) {
-//         document.head.removeChild(script);
-//       }
-//     };
-//   }, []); // Empty dependency array ensures this runs only once
-
 //   const handleBookingInputChange = (e) => {
 //     const { name, value } = e.target;
 //     setBookingDetails((prev) => {
@@ -1728,36 +1696,6 @@ const Home = () => {
     startDate: "",
     expiryDate: "",
   });
-
-  // Watson Assistant script
-  useEffect(() => {
-    if (document.getElementById("watson-assistant-script")) {
-      return;
-    }
-
-    window.watsonAssistantChatOptions = {
-      integrationID: "dbc5efd6-7930-44f3-a666-5c922e7af412",
-      region: "au-syd",
-      serviceInstanceID: "5ce544a6-f5fe-4683-b19b-6e4bf839a15a",
-      onLoad: async (instance) => {
-        await instance.render();
-      },
-    };
-
-    const script = document.createElement("script");
-    script.id = "watson-assistant-script";
-    script.src =
-      "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-      (window.watsonAssistantChatOptions.clientVersion || "latest") +
-      "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(script);
-
-    return () => {
-      if (document.getElementById("watson-assistant-script")) {
-        document.head.removeChild(script);
-      }
-    };
-  }, []);
 
   const handleBookingInputChange = (e) => {
     const { name, value } = e.target;
