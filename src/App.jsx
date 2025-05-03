@@ -2,13 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 // Import all page components
-import ComingSoon from './components/ComingSoon';
-import PrivacyPolicy from './components/PrivacyPolicy';
-import TermsAndConditions from './components/TermsAndConditions';
-import Cancellation from './components/Cancellation';
-import ShippingDelivery from './components/ShippingDelivery';
-import ContactUs from './components/ContactUs';
-import Home from './components/Home';
+import ComingSoon from './pages/ComingSoon';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
+import Cancellation from './pages/Cancellation';
+import ShippingDelivery from './pages/ShippingDelivery';
+import ContactUs from './pages/ContactUs';
+import Home from './pages/Home';
 
 function App() {
   return (
