@@ -303,8 +303,8 @@ const ComingSoon = () => {
           <div className="hidden md:block h-6 w-px bg-gray-700"></div>
           <div>
             <p className="text-gray-300 text-sm">Call us at:</p>
-            <a href="tel:+919537531054" className="text-[#FFA500] hover:underline">
-              +91 9537531054
+            <a href="tel:+919099208880" className="text-[#FFA500] hover:underline">
+              +91 90992 08880
             </a>
           </div>
           <div className="hidden md:block h-6 w-px bg-gray-700"></div>

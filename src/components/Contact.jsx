@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-[#2D2A3A] to-[#1A1721]">
+    <section id="contactus" className="py-20 bg-gradient-to-b from-[#2D2A3A] to-[#1A1721]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-8">
           <motion.div
@@ -47,8 +47,8 @@ const Contact = () => {
                     className="text-[#FFA500] flex-shrink-0"
                   />
                 </div>
-                <a href="tel:+919537531054" className="hover:text-[#FFA500] transition-colors">
-                  +91 9537531054
+                <a href="tel:+919099208880" className="hover:text-[#FFA500] transition-colors">
+                  +91 90992 08880
                 </a>
               </motion.li>
               <motion.li 

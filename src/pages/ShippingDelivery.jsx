@@ -201,10 +201,10 @@
 //                 <ul className="space-y-2">
 //                   <li>
 //                     <a
-//                       href="tel:+919537531054"
+//                       href="tel:+919099208880"
 //                       className="text-gray-400 hover:text-[#FFA500] transition-colors"
 //                     >
-//                       +91 9537531054
+//                       +91 90992 08880
 //                     </a>
 //                   </li>
 //                   <li>
@@ -382,7 +382,7 @@ const ShippingDelivery = () => {
                 },
                 {
                   title: "Delivery Issues",
-                  content: <span>If you encounter any issues with your delivery, please contact our customer service team at <a href="mailto:support@flicknroll.com" className="text-[#FFA500] hover:underline">support@flicknroll.com</a> or <a href="tel:+919537531054" className="text-[#FFA500] hover:underline">+91 9537531054</a> within 7 days of the expected delivery date.</span>
+                  content: <span>If you encounter any issues with your delivery, please contact our customer service team at <a href="mailto:support@flicknroll.com" className="text-[#FFA500] hover:underline">support@flicknroll.com</a> or <a href="tel:+919099208880" className="text-[#FFA500] hover:underline">+91 90992 08880</a> within 7 days of the expected delivery date.</span>
                 },
                 {
                   title: "Returns & Exchanges",
@@ -552,7 +552,7 @@ const ShippingDelivery = () => {
                 <h4 className="font-bold text-lg mb-4 text-white">Contact</h4>
                 <ul className="space-y-2">
                   {[
-                    { label: "+91 9537531054", href: "tel:+919537531054" },
+                    { label: "+91 90992 08880", href: "tel:+919099208880" },
                     { label: "info@flicknroll.com", href: "mailto:info@flicknroll.com" },
                   ].map((link, index) => (
                     <motion.li key={index} whileHover={{ x: 3 }}>

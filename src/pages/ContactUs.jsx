@@ -142,7 +142,7 @@
 //                     info@flicknroll.com
 //                   </p>
 //                   <p>
-//                     <span className="font-semibold">Phone:</span> +91 9537531054
+//                     <span className="font-semibold">Phone:</span> +91 90992 08880
 //                   </p>
 //                 </div>
 
@@ -391,10 +391,10 @@
 //                 <ul className="space-y-2">
 //                   <li>
 //                     <a
-//                       href="tel:+919537531054"
+//                       href="tel:+919099208880"
 //                       className="text-gray-400 hover:text-[#FFA500] transition-colors"
 //                     >
-//                       +91 9537531054
+//                       +91 90992 08880
 //                     </a>
 //                   </li>
 //                   <li>
@@ -633,7 +633,7 @@ const ContactUs = () => {
                     title: "Contact Information",
                     items: [
                       { icon: <Mail size={18} className="text-[#FFA500] mr-2" />, content: <span><span className="font-semibold">Email:</span> <a href="mailto:info@flicknroll.com" className="hover:text-[#FFA500] transition-colors">info@flicknroll.com</a></span> },
-                      { icon: <Phone size={18} className="text-[#FFA500] mr-2" />, content: <span><span className="font-semibold">Phone:</span> <a href="tel:+919537531054" className="hover:text-[#FFA500] transition-colors">+91 9537531054</a></span> },
+                      { icon: <Phone size={18} className="text-[#FFA500] mr-2" />, content: <span><span className="font-semibold">Phone:</span> <a href="tel:+919099208880" className="hover:text-[#FFA500] transition-colors">+91 90992 08880</a></span> },
                     ]
                   },
                   {
@@ -948,7 +948,7 @@ const ContactUs = () => {
                 <h4 className="font-bold text-lg mb-4 text-white">Contact</h4>
                 <ul className="space-y-2">
                   {[
-                    { label: "+91 9537531054", href: "tel:+919537531054" },
+                    { label: "+91 90992 08880", href: "tel:+919099208880" },
                     { label: "info@flicknroll.com", href: "mailto:info@flicknroll.com" },
                   ].map((link, index) => (
                     <motion.li key={index} whileHover={{ x: 3 }}>

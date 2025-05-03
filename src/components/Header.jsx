@@ -12,7 +12,8 @@ const Header = ({ activeSection, setIsBookingOpen }) => {
     { label: "About Us", href: "#about", section: "about" },
     { label: "Amenities", href: "#amenities", section: "amenities" },
     { label: "Pricing", href: "#pricing", section: "pricing" },
-    { label: "Contact Us", href: "/contact-us", section: "contactus" },
+    // { label: "Contact Us", href: "/contact-us", section: "contactus" },
+    { label: "Contact Us", href: "#contactus", section: "contactus" },
   ];
 
   return (

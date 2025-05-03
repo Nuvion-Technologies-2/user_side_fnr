@@ -190,10 +190,10 @@
 //                 <ul className="space-y-2">
 //                   <li>
 //                     <a
-//                       href="tel:+919537531054"
+//                       href="tel:+919099208880"
 //                       className="text-gray-400 hover:text-[#FFA500] transition-colors"
 //                     >
-//                       +91 9537531054
+//                       +91 90992 08880
 //                     </a>
 //                   </li>
 //                   <li>
@@ -510,7 +510,7 @@ const TermsAndConditions = () => {
                 <h4 className="font-bold text-lg mb-4 text-white">Contact</h4>
                 <ul className="space-y-2">
                   {[
-                    { label: "+91 9537531054", href: "tel:+919537531054" },
+                    { label: "+91 90992 08880", href: "tel:+919099208880" },
                     { label: "info@flicknroll.com", href: "mailto:info@flicknroll.com" },
                   ].map((link, index) => (
                     <motion.li key={index} whileHover={{ x: 3 }}>

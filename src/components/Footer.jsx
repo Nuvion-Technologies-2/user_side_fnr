@@ -9,7 +9,8 @@ const Footer = () => {
     { label: "About Us", href: "#about" },
     { label: "Amenities", href: "#amenities" },
     { label: "Pricing", href: "#pricing" },
-    { label: "Contact Us", href: "/contact-us" },
+    // { label: "Contact Us", href: "/contact-us" },
+    { label: "Contact Us", href: "#contactus" },
   ];
   
   const policyLinks = [
@@ -20,7 +21,7 @@ const Footer = () => {
   ];
 
   const contactLinks = [
-    { label: "+91 9537531054", href: "tel:+919537531054" },
+    { label: "+91 90992 08880", href: "tel:+919099208880" },
     { label: "info@flicknroll.com", href: "mailto:info@flicknroll.com" },
   ];
 

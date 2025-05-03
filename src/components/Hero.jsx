@@ -83,7 +83,7 @@ const Hero = ({ setIsBookingOpen }) => {
         </motion.div>
 
         <motion.div
-          className="md:w-1/2 mr-10 relative"
+          className="md:w-150 mr-5 relative"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
